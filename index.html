@@ -1,31 +1,39 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Presentation on Road Signs</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Signs Presentation</title>
+
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
             background: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
         }
 
         video {
-            width: 100%;
-            max-width: 1000px;
+            width: 100vw;
+            height: 100vh;
+            object-fit: contain;
+            display: block;
+            background: black;
         }
     </style>
 </head>
+
 <body>
-
-    <video controls autoplay playsinline>
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support video.
+    <video controls playsinline preload="auto">
+        <source src="Road%20Signs.mp4" type="video/mp4">
+        Your browser does not support MP4.
     </video>
-
 </body>
 </html>
